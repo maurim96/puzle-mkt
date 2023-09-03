@@ -32,7 +32,7 @@ const UnderConstruction = () => {
           </div>
         </div>
       </div>
-      <div className={`mb-4 text-sm font-montserrat ${isStandardPhone ? 'mt-6' : ''}`}>
+      <div className={`mb-4 text-sm font-montserrat ${isStandardPhone ? 'mt-10' : ''}`}>
         © {new Date().getFullYear()} Puzle Consultora. Todos los derechos reservados.
       </div>
     </div>
