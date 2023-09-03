@@ -1,10 +1,17 @@
 import { PuzleLogo } from '@/components/PuzleLogo';
+import useIsStandardPhone from '@/utils/breakpoints';
 import { Barricade, Envelope } from '@phosphor-icons/react';
 import React from 'react';
 
 const UnderConstruction = () => {
+  const isStandardPhone = useIsStandardPhone();
+
   return (
-    <div className="flex flex-col items-center justify-between min-h-screen py-8 bg-[#051A37] text-[#FFB9B8] relative">
+    <div
+      className={`flex flex-col items-center justify-between py-8 bg-[#051A37] text-[#FFB9B8] relative ${
+        isStandardPhone ? 'h-full' : 'h-screen'
+      }`}
+    >
       <div className="flex flex-col items-center">
         <div className="flex align-center justify-center">
           <Barricade size={26} className="mr-2" />
