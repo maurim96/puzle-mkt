@@ -1,12 +1,12 @@
-export const PuzleLogo = () => (
+export const PuzleLogo = ({ width = 250, height = 250 }) => (
   <svg
     version="1.1"
     id="puzle-logo"
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="250"
-    height="250"
+    width={width}
+    height={height}
     viewBox="0 0 500 500"
     enableBackground="new 0 0 500 500"
   >

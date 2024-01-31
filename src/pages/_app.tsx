@@ -11,10 +11,10 @@ const PuzleMarketingApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <title>Puzle Consultora</title>
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
-    // <Layout>
-    // </Layout>
   );
 };
 
